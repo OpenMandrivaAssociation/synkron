@@ -1,12 +1,12 @@
 %define srcname	Synkron
 %define version	 1.6.1
-%define release	%mkrel 1
+%define release	%mkrel 2
 %define Summary	 A synchronization tool with QT4 GUI
 
 Summary:	%Summary
 Name:		synkron
 Version:	%version
-Release:	%mkrel 1
+Release:	%mkrel 2
 Group:		File tools
 License:	GPLv2
 URL:		http://sourceforge.net/projects/synkron/
