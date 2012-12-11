@@ -66,3 +66,18 @@ chmod 644  gpl.txt readme.txt
 
 %clean
 %__rm -rf %{buildroot}
+
+
+%changelog
+* Wed Dec 08 2010 Oden Eriksson <oeriksson@mandriva.com> 1.6.1-2mdv2011.0
++ Revision: 615060
+- the mass rebuild of 2010.1 packages
+
+* Sun Nov 15 2009 John Balcaen <mikala@mandriva.org> 1.6.1-1mdv2010.1
++ Revision: 466116
+- Update to 1.6.1
+
+* Thu Oct 01 2009 John Balcaen <mikala@mandriva.org> 1.6.0-1mdv2010.0
++ Revision: 451907
+- import synkron
+

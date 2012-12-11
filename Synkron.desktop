@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Synkron
+Type=Application
+Comment=A synchronization utility
+Exec=synkron
+Icon=/usr/share/icons/synkron/Synkron48.png
+Categories=Utility;FileTools;Qt;
+Terminal=false
+Name[de_DE]=Synkron
