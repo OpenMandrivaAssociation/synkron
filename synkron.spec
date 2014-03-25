@@ -4,8 +4,8 @@
 
 Summary:	A synchronization tool with QT4 GUI
 Name:		synkron
-Version:	1.6.1
-Release:	3
+Version:	1.6.2
+Release:	1
 Group:		File tools
 License:	GPLv2
 URL:		http://sourceforge.net/projects/synkron/
