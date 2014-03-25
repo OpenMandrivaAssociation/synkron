@@ -1,18 +1,16 @@
 %define srcname	Synkron
-%define version	 1.6.1
-%define release	%mkrel 2
-%define Summary	 A synchronization tool with QT4 GUI
 
-Summary:	%Summary
+%define debug_package %{nil}
+
+Summary:	A synchronization tool with QT4 GUI
 Name:		synkron
-Version:	%version
-Release:	%mkrel 2
+Version:	1.6.1
+Release:	3
 Group:		File tools
 License:	GPLv2
 URL:		http://sourceforge.net/projects/synkron/
 Source0:	http://downloads.sourceforge.net/project/%name/%name/%version/%srcname-%{version}-src.tar.gz
 Source1:	Synkron.desktop
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	qt4-devel >= 4:4.3 desktop-file-utils
 Requires:	qt4-common >= 4:4.3
 
@@ -32,7 +30,6 @@ and Windows.
 Synkron is distributed under the terms of the GPL v2 licence.
 
 %files
-%defattr(-,root,root)
 %doc gpl.txt readme.txt
 %{_bindir}/synkron
 %{_datadir}/icons/synkron/
@@ -49,7 +46,6 @@ qmake -config release
 %make 
 
 %install
-%__rm -rf %{buildroot}
 #binary
 install -d %{buildroot}/%{_bindir}
 install -m 0755 synkron -s %{buildroot}/%{_bindir}
@@ -63,21 +59,3 @@ install -m 0644 images/Synkron48.png %{buildroot}/%{_datadir}/icons/%{name}
 desktop-file-install  --dir="%{buildroot}/%{_datadir}/applications" %{SOURCE1}
 # Fix perms
 chmod 644  gpl.txt readme.txt
-
-%clean
-%__rm -rf %{buildroot}
-
-
-%changelog
-* Wed Dec 08 2010 Oden Eriksson <oeriksson@mandriva.com> 1.6.1-2mdv2011.0
-+ Revision: 615060
-- the mass rebuild of 2010.1 packages
-
-* Sun Nov 15 2009 John Balcaen <mikala@mandriva.org> 1.6.1-1mdv2010.1
-+ Revision: 466116
-- Update to 1.6.1
-
-* Thu Oct 01 2009 John Balcaen <mikala@mandriva.org> 1.6.0-1mdv2010.0
-+ Revision: 451907
-- import synkron
-
