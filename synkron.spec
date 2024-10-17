@@ -8,7 +8,7 @@ Version:	1.6.2
 Release:	2
 Group:		File tools
 License:	GPLv2
-URL:		http://sourceforge.net/projects/synkron/
+URL:		https://sourceforge.net/projects/synkron/
 Source0:	http://downloads.sourceforge.net/project/%name/%name/%version/%srcname-%{version}-src.tar.gz
 Source1:	Synkron.desktop
 BuildRequires:	qt4-devel >= 4:4.3 desktop-file-utils
